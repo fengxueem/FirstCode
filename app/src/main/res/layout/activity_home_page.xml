@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.handsomemark.firstcode.HomePage">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toastbutton"
+        android:text="Toast Button"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Function: Make a toast"
+        android:layout_alignTop="@+id/toastbutton"
+        android:layout_toRightOf="@+id/toastbutton" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotosecond"
+        android:text="SecondPage"
+        android:layout_below="@id/toastbutton" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Function: Implicit Intent with Data"
+        android:layout_alignTop="@+id/gotosecond"
+        android:layout_toRightOf="@+id/toastbutton" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotothird"
+        android:text="ThirdPage"
+        android:layout_below="@id/gotosecond" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Function: Web Browser"
+        android:layout_alignTop="@+id/gotothird"
+        android:layout_toRightOf="@+id/toastbutton" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotofour"
+        android:text="FourthPage"
+        android:layout_below="@id/gotothird" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Function: Voice Contral"
+        android:layout_alignTop="@+id/gotofour"
+        android:layout_toRightOf="@+id/toastbutton" />
+</RelativeLayout>
