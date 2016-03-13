@@ -23,9 +23,15 @@ public class ThirdPage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third_page);
         Intent callerIntent = getIntent();
-        String defaultUri = callerIntent.getStringExtra("default_uri");
+        //String defaultUri = callerIntent.getStringExtra("default_uri");
+        Bundle b;// initial a bundle
+        String defaultUri;
+        b = callerIntent.getExtras();// get the bundle from intent
         wab = (EditText) findViewById(R.id.webaddbar);
-        wab.setText(defaultUri);
+        if (b != null) {
+            defaultUri = b.getString("default_uri");// extract string from that bundle
+            wab.setText(defaultUri);
+        }
         gtw = (Button) findViewById(R.id.gotoweb);
         gtw.setOnClickListener(new View.OnClickListener() {
             @Override

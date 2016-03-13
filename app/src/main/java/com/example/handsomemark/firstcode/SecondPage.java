@@ -24,7 +24,10 @@ public class SecondPage extends AppCompatActivity{
             public void onClick(View v) {
                 Intent i = new Intent("com.example.ACTION_START");//Implicit intent
                 String data = "www.google.com";
-                i.putExtra("default_uri",data);
+                Bundle b = new Bundle();
+                b.putString("default_uri",data);
+                //i.putExtra("default_uri",data);
+                i.putExtras(b);
                 startActivity(i);
             }
         });
